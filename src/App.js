@@ -1,9 +1,16 @@
+import Search from './Components/Search';
+import UserList from './Components/UserList';
 import classes from './App.module.css'
+import { useState } from 'react';
 
 function App() {
+  const [filter, setFilter] = useState()
+
   return (
-    <div className={`${classes.tmp}`}>
-      Just a test
+    <div>
+      <Search setFilter={setFilter}/>
+      <hr/>
+      <UserList filter={filter}/>
     </div>
   );
 }
