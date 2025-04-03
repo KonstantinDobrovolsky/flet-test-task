@@ -2,7 +2,8 @@
     box-sizing: border-box;
     width: 30vw;
     height: 10vh;
-    border: 1px solid green;
+    border: 2px solid green;
+    color: green;
     text-align: center;
     font-size: 20px;
 }

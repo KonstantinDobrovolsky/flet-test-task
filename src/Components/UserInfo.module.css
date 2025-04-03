@@ -1,0 +1,10 @@
+.userInfo {
+    width: 30vw;
+    height: 20vh;
+    color: green;
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 20px;
+}

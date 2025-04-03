@@ -8,14 +8,18 @@ const UserList = ({filter}) => {
     const [filteredUsers, setFilteredUsers] = useState([])
 
     useEffect(() => {
-      axios.get("https://jsonplaceholder.typicode.com/users")
-        .then(response => {
+      const getUsers = async () => {
+        try {
+          const response = await axios.get("https://jsonplaceholder.typicode.com/users")
           setUsers(response.data)
           setFilteredUsers(response.data)
-        })
-        .catch(error => {
-          console.error("Error: ", error)
-        })
+        }
+        catch {
+          console.log("Error: Failed to load users")
+        }
+      }
+
+      getUsers()
     }, [])
 
     useEffect(() => {
