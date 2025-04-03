@@ -1,0 +1,19 @@
+.post {
+    border: 1px solid green;
+    color: green;
+    font-size: 15px;
+    padding: 5px auto;
+    width: 80vw;
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
+.title {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.body {
+    padding-left: 20px;
+}

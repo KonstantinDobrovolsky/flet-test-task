@@ -1,0 +1,33 @@
+.userPage {
+    margin: 20px 20px;
+}
+
+.posts {
+    font-size: 30px;
+    color: green;
+    margin: 10px 0;
+}
+
+.back {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 20px 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 5vw;
+    height: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back:hover {
+    color: white;
+    border: none;
+    background-color: black;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
