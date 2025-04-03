@@ -1,17 +1,11 @@
-import Search from './Components/Search';
-import UserList from './Components/UserList';
-import classes from './App.module.css'
-import { useState } from 'react';
+import Routs from "./Routs";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
-  const [filter, setFilter] = useState()
-
   return (
-    <div>
-      <Search setFilter={setFilter}/>
-      <hr/>
-      <UserList filter={filter}/>
-    </div>
+    <BrowserRouter>
+      <Routs />
+    </BrowserRouter>
   );
 }
 

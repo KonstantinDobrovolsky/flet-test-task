@@ -28,7 +28,7 @@ const UserList = ({filter}) => {
 
     return (
         <div className={`${classes.userList}`}>
-            {filteredUsers.map((user) => <User name={user.name} key={user.id}/>)}
+            {filteredUsers.map((user) => <User user={user} key={user.id}/>)}
         </div>
     );
 }
